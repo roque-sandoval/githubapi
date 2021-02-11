@@ -17,7 +17,7 @@ class UsersViewModel(
 
     fun getUsers() {
         this.userViewModelState.value = UsersViewModelState.ProgressVisibility(View.VISIBLE)
-        this.getUsersUseCase.setToken("token 0aa9af9bab06a1ffa228827c61ab8716c92561d3")
+        this.getUsersUseCase.setToken("token 4994260c19b75959d5fc86add7032790073deaac")
         this.getUsersUseCase.execute(
             onSuccess = ::handleUsers,
             onError = ::handleError
